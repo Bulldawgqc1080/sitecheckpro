@@ -418,6 +418,30 @@
   footer p { font-size: 0.8rem; color: rgba(255,255,255,0.2); }
 
   /* ── RESPONSIVE ── */
+
+  .zelle-note {
+    background: #F0F7FF;
+    border: 1px solid #BDD4EE;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #2C5F8A;
+    margin-bottom: 20px;
+  }
+  .btn-download {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 28px;
+    background: var(--navy);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-download:hover { background: var(--navy2); transform: translateY(-1px); }
+
   @media (max-width: 768px) {
     .hero-grid { grid-template-columns: 1fr; gap: 48px; }
     .hero-card { display: none; }
@@ -575,6 +599,9 @@
       </div>
     </div>
     <p class="findings-note">* These are real findings from an actual audit. Your report will be specific to your site.</p>
+    <a href="sample_audit_report.pdf" class="btn-download" download>
+      📄 Download a Sample Report — See exactly what you'll receive
+    </a>
   </div>
 </section>
 
@@ -620,6 +647,7 @@
         <div class="pricing-name">Audit Report</div>
         <div class="pricing-price"><span>$</span>197</div>
         <p class="pricing-desc">Everything you need to understand what's holding your site back and how to fix it.</p>
+        <div class="zelle-note">💳 Pay via Zelle after submitting — audit starts once payment received.</div>
         <ul class="pricing-items">
           <li>Full 6-category website audit</li>
           <li>Google PageSpeed scores (mobile + desktop)</li>
@@ -628,12 +656,13 @@
           <li>Priority findings clearly labeled</li>
           <li>Delivered within 48 hours</li>
         </ul>
-        <a href="YOUR_STRIPE_LINK_HERE" class="btn-pricing btn-pricing-secondary">Get the Report</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGghynXzvJbOEU86M1iwWfOn_K0j7MQay3K68WUVsgds/viewform" class="btn-pricing btn-pricing-secondary">Request My Audit</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-name">Quick Wins Package</div>
         <div class="pricing-price"><span>$</span>297</div>
         <p class="pricing-desc">We run the audit AND fix every critical issue for you. You don't touch a thing.</p>
+        <div class="zelle-note">💳 Pay via Zelle after submitting — work starts once payment received.</div>
         <ul class="pricing-items">
           <li>Everything in Audit Report</li>
           <li>We implement all critical fixes</li>
@@ -642,7 +671,7 @@
           <li>CTA button added to hero</li>
           <li>Confirmation when complete</li>
         </ul>
-        <a href="YOUR_STRIPE_LINK_HERE" class="btn-pricing btn-pricing-primary">Get It Done — $297</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGghynXzvJbOEU86M1iwWfOn_K0j7MQay3K68WUVsgds/viewform" class="btn-pricing btn-pricing-primary">Get It Done — $297</a>
       </div>
     </div>
   </div>
