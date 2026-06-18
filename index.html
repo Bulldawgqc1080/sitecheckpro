@@ -344,7 +344,7 @@
 
   /* ── PRICING ── */
   .pricing { background: var(--cream); }
-  .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 800px; }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; max-width: 1100px; }
   .pricing-card {
     border: 1px solid var(--border);
     border-radius: 16px;
@@ -445,7 +445,7 @@
   @media (max-width: 768px) {
     .hero-grid { grid-template-columns: 1fr; gap: 48px; }
     .hero-card { display: none; }
-    .pricing-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
     .steps::before { display: none; }
     nav .nav-cta { font-size: 0.78rem; padding: 8px 14px; }
   }
@@ -675,6 +675,20 @@
           <li>Confirmation when complete</li>
         </ul>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_5myfHUqSsML5ah8OcYcsFvTigPHYlkODW5jB-p1y-vb3aw/viewform" target="_blank" rel="noopener" class="btn-pricing btn-pricing-primary">Get It Done — $297</a>
+      </div>
+      <div class="pricing-card" style="border-color: var(--navy2);">
+        <div class="pricing-name">Website Design</div>
+        <div class="pricing-price"><span>$</span>500<span style="font-size:1rem; font-weight:300;">+</span></div>
+        <p class="pricing-desc">Need a site built from scratch? We design clean, fast, mobile-friendly websites for local service businesses.</p>
+        <ul class="pricing-items">
+          <li>Custom one-page or multi-page site</li>
+          <li>Mobile responsive design</li>
+          <li>Contact form included</li>
+          <li>Google Business Profile setup</li>
+          <li>Basic SEO configuration</li>
+          <li>Delivered within 5 business days</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_5myfHUqSsML5ah8OcYcsFvTigPHYlkODW5jB-p1y-vb3aw/viewform" target="_blank" rel="noopener" class="btn-pricing btn-pricing-secondary">Let's Talk</a>
       </div>
     </div>
   </div>
