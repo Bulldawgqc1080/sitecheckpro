@@ -50,9 +50,11 @@
     font-size: 1.25rem;
     color: var(--white);
     text-decoration: none;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
-  .nav-logo span { color: var(--gold); }
+  .logo-site { color: var(--white); }
+  .logo-check { color: var(--gold); }
+  .logo-pro { color: var(--white); opacity: 0.65; font-style: italic; margin-left: 1px; }
   .nav-cta {
     background: var(--gold);
     color: var(--navy);
@@ -414,7 +416,9 @@
     border-top: 1px solid rgba(255,255,255,0.05);
   }
   .footer-logo { font-family: 'DM Serif Display', serif; color: rgba(255,255,255,0.4); font-size: 1rem; }
-  .footer-logo span { color: rgba(232,160,32,0.5); }
+  .footer-logo .logo-site { color: rgba(255,255,255,0.4); }
+  .footer-logo .logo-check { color: rgba(232,160,32,0.6); }
+  .footer-logo .logo-pro { color: rgba(255,255,255,0.4); opacity: 0.7; font-style: italic; }
   footer p { font-size: 0.8rem; color: rgba(255,255,255,0.2); }
 
   /* ── RESPONSIVE ── */
@@ -458,7 +462,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Site<span>Check</span> Pro</a>
+  <a href="#" class="nav-logo"><span class="logo-site">Site</span><span class="logo-check">Check</span> <span class="logo-pro">Pro</span></a>
   <a href="#pricing" class="nav-cta">Get My Audit — $197</a>
 </nav>
 
@@ -735,7 +739,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Site<span>Check</span> Pro</div>
+  <div class="footer-logo"><span class="logo-site">Site</span><span class="logo-check">Check</span> <span class="logo-pro">Pro</span></div>
   <p>© 2026 SiteCheck Pro. All rights reserved.</p>
 </footer>
 
