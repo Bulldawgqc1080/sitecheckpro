@@ -377,6 +377,21 @@ transition: all 0.2s;
 .btn-pricing-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
 .btn-pricing-secondary { background: transparent; color: var(--navy); border: 1.5px solid var(--border); }
 .btn-pricing-secondary:hover { border-color: var(--navy); }
+/* ── GUARANTEE BADGE ── */
+.guarantee-badge {
+display: inline-flex; align-items: center; gap: 12px;
+background: #EAF4EA;
+border: 1px solid #B9DCC0;
+border-radius: 10px;
+padding: 14px 20px;
+margin-bottom: 40px;
+max-width: 620px;
+font-size: 0.9rem;
+line-height: 1.5;
+color: #1a4a1a;
+}
+.guarantee-badge strong { color: var(--green); }
+.guarantee-icon { font-size: 1.4rem; flex-shrink: 0; }
 /* ── FAQ ── */
 .faq { background: var(--white); }
 .faq-list { max-width: 680px; display: flex; flex-direction: column; gap: 0; }
@@ -644,6 +659,10 @@ A professional audit of your website — SEO gaps, speed issues, conversion prob
 <div class="section-eyebrow">Pricing</div>
 <h2>Simple, flat-rate pricing</h2>
 <p class="section-sub">No subscriptions. No surprise fees. Pay once, get your report. <a href="sitecheck-pro-sample-audit-report.pdf" download style="color: var(--navy); font-weight: 600; text-decoration: underline;">See a sample report first</a>.</p>
+<div class="guarantee-badge">
+<span class="guarantee-icon">🛡️</span>
+<span><strong>30-Day Money-Back Guarantee.</strong> If your report isn't genuinely useful, I'll refund you in full — no questions asked.</span>
+</div>
 <div class="pricing-grid">
 <div class="pricing-card">
 <div class="pricing-name">Audit Report</div>
